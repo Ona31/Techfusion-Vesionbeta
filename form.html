@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="icon" href="URL_DE_TON_IMAGE" type="/images/2.png/x-icon">
+    <title>TF|formulaire</title>
+    
+  <style>
+    .required::after {
+      content: '*';
+      color: red;
+      margin-left: 0.25rem;
+    }
+      .dark .bg-customs {
+      background-color: #0a0a0a;
+    }
+    .text-cust{
+      background: linear-gradient(45deg,#69489f,#010612b1,20px,#69489f) ; 
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-custo{
+      background: linear-gradient(45deg,#69489f,#0a0a0a,#69489f) ; 
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .bg-cutmation{
+      background: linear-gradient(45deg,#69489f,#0a0a0a,#69489f) ; 
+    }
+    .dark .bg-blur{
+      backdrop-filter: blur(20px);
+      
+      background: linear-gradient(45deg,#69489f22,#0a0a0a4b,#69489f2b) ; 
+      
+    }
+    .dark .bg-blure{
+      backdrop-filter: blur(20px);
+      
+      background:#0a0a0a1c ; 
+      
+    }
+     .bg-blures{
+      backdrop-filter: blur(20px);
+      
+      background:rgba(255,255,255,0.1) ; 
+      
+    }
+
+    .dark .text-custom {
+      color: #859096;
+    
+    }
+   .dark .text-z{
+      z-index: 10;
+    }
+     .border-custom {
+      border: 1px solid #69489f;
+    }
+    .text-si{
+      font-size: 350px;
+    }
+    
+    
+  </style>
+</head>
+<body class="flex justify-center w-full min-h-dvh  bg-customs ">
+    <main class="flex flex-col  w-full min-h-dvh items-center justify-center scroll-smooth">
+        <form action="" method="post" class="block bg-blures bg-blure border-custom p-7 rounded-lg shadow-xl ">
+            <li class="mr-5 ml-2 flex"><a href="#" id="toggleButton" class=" flex text-custom  p-4 decoration-clone border-2 border-gray-800  rounded-lg font-bold transition duration-500 ease-in-out   items-center text-gray-600 pb-2  pt-2 text-sm"><i class="fa-solid fa-moon"></i></a></li>
+            <div class="flex flex-col p-4">
+                <label for="name" class="font-bold text-lg text-custom required text-gray-600">Nom</label>
+                <div class="flex  justify-between p-1">
+                    <i class="fa-solid fa-user text-cust text-2xl"></i>
+                    <input type="text" id="name" name="Nom" class=" flex border-custom bg-customs rounded-md outline-transparent" required>
+                </div>
+                
+                <label for="name" class="font-bold text-custom text-gray-600">Pres-nom</label>
+                <div class="flex border-custom">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="name" name="Pres-nom" required>
+                </div>
+
+                <label for="name" class="font-bold text-custom text-gray-600">Sexe</label>
+                <div class="flex">
+                    <i class="fa-solid fa-user"></i>
+                    <select name="sexe" id="sexe" disabled="disabled">
+                        <option value="">Sélectionnez votre sexe</option>
+                        <option value="male">Homme</option>
+                        <option value="female">Femme</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+                
+                <label for="" class="font-bold text-custom text-gray-600">Filiere</label>
+                <div class="flex">
+                    <i class="fa-solid fa-user"></i>
+                <select name="prom" id="" >
+                    <option value="">Sélectionnez votre filière</option>
+                    <option value="maths">Maths</option>
+                    <option value="sciences">Sciences</option>
+                    <option value="technologie">Technologie</option>
+                    <option value="art">Art</option>
+                    <option value="langue">Langue</option>                    
+                </select>
+                </div>
+
+                <label for="" class="font-bold text-custom text-gray-600">Promotion</label>
+                <div class="flex">
+                    <i class="fa-solid fa-user"></i>
+                <select name="prom" id="" >
+                    <option value="">Sélectionnez votre promotion</option>
+                        <option value="1">1ère année</option>
+                        <option value="2">2ème année</option>
+                        <option value="3">3ème année</option>
+                        
+                </select>
+                </div>
+                
+                <label for="">Whatsapp</label>
+                <div class="flex">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="cont" name="Contact" required>
+                </div>
+                
+                <label for="name">Email</label>
+                <div class="flex">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" id="email" name="email" required>
+                </div>
+            </div>
+        </form>
+    </main>
+    <script>
+           const toggleButton = document.getElementById('toggleButton');
+const toggleButto = document.getElementById('toggleButto');
+toggleButton.addEventListener('click', () => {
+  document.documentElement.classList.toggle('dark');
+});
+toggleButto.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+  });
+    </script>
+</body>
+</html>

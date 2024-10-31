@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="dist/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="icon" href="URL_DE_TON_IMAGE" type="/images/2.png/x-icon">
+  
+
+    <title>TechFusion</title>
+    <style>
+     
+
+      .min-h-dvh {
+        min-height: 100vh;
+      }
+      .dark .bg-customs {
+      background-color: #0a0a0a;
+    }
+    .text-cust{
+      background: linear-gradient(45deg,#69489f,#010612b1,20px,#69489f) ; 
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .text-custo{
+      background: linear-gradient(45deg,#69489f,#0a0a0a,#69489f) ; 
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    
+    .bg-cutmation{
+      background: linear-gradient(45deg,#69489f,#0a0a0a,#69489f) ; 
+    }
+    .dark .bg-blur{
+      backdrop-filter: blur(20px);
+      
+      background: linear-gradient(45deg,#69489f22,#0a0a0a4b,#69489f2b) ; 
+      
+    }
+    .dark .bg-blure{
+      backdrop-filter: blur(20px);
+      
+      background:#0a0a0a1c ; 
+      
+    }
+     .bg-blures{
+      backdrop-filter: blur(20px);
+      
+      background:rgba(255,255,255,0.1) ; 
+      
+    }
+
+    .dark .text-custom {
+      color: #859096;
+    
+    }
+   .dark .text-z{
+      z-index: 10;
+    }
+     .border-custom {
+      border: 1px solid #69489f;
+    }
+    .text-si{
+      font-size: 350px;
+    }
+    
+    </style>
+</head>
+<body class="flex justify-center w-full min-h-dvh  bg-customs ">
+    <header class="flex w-full justify-around bg-blure  shadow-2xl z-10 h-auto items-center md:justify-evenly bg-custom bg-blures fixed  ">
+      
+  
+      <nav class="  w-full md:p-4 p-2">
+        <div class="md:hidden flex-col ">
+          <button id="menu-button">
+            <a href="#" class="flex px-2 text-cust  decoration-clone text-4xl  font-bold  items-center  pb-2  pt-2 md:text-3xl"><i class="fas fa-fingerprint px-1"></i></a>
+          
+          </button>
+          <a href="#" class=" items-center   shadow-md right-2 flex absolute top-2 border-custom bg-cutmation border-2 text-white  font-bold text-sm leading-6  py-2 px-3 rounded-lg transition duration-500 ease-in-out  ">S'inscrire<i class="fas fa-user-plus mx-1"></i></a>
+        </div>
+
+      </div>
+        <div class="container flex-col  flex justify-between md:items-center ">
+          <div class="flex ">
+        
+          <a href="#" class=" hidden md:flex px-2  text-cust decoration-clone text-4xl  font-bold  items-center text-customPink pb-2  pt-2 md:text-3xl"><i class="fas fa-fingerprint px-1"></i>TechFusion</a>
+          </div>
+          <div id="menu" class="hidden md:flex  space-x-4">
+            
+             <ul class=" hidden md:flex">
+              <li class="mr-5 ml-2 flex"><a href="#" id="toggleButto" class=" flex text-custom  p-4 decoration-clone border-2 border-gray-800  rounded-lg font-bold transition duration-500 ease-in-out   items-center text-gray-600 pb-2  pt-2 text-sm"><i class="fa-solid fa-moon"></i></a></li>
+              <li class="mr-5 ml-2 flex"><a href="#Home" class=" flex px-2 decoration-clone text-custom  hover:border rounded-lg font-bold transition duration-500 ease-in-out   items-center text-gray-600 pb-2  pt-2 text-sm">Home</a></li>
+              <li class="mr-5 ml-2 flex"><a href="#About" class=" flex px-2 decoration-clone text-custom hover:border rounded-lg font-bold transition duration-500 ease-in-out   items-center text-gray-600 pb-2  pt-2  text-sm">About</a></li>
+              <li class="mr-5 ml-2 flex"><a href="#Services" class="flex px-2 decoration-clone text-custom hover:border rounded-lg font-bold transition duration-500 ease-in-out   items-center text-gray-600 pb-2  pt-2 text-sm">Services</a></li>
+              <li class="mr-5 ml-2 flex"><a href="#Calendrier" class="flex px-2 decoration-clone text-custom hover:border rounded-lg font-bold transition duration-500 ease-in-out   items-center text-gray-600  pb-2  pt-2 text-sm">Calendrier</a></li>
+              <li class="mr-5 ml-2 flex"><a href="#Oeuvres" class="flex px-2 decoration-clone text-custom hover:border rounded-lg font-bold transition duration-500 ease-in-out   items-center text-gray-600  pb-2  pt-2 text-sm">Oeuvres</a></li>
+              <li class="mr-5 ml-2 flex"><a href="#Contact" class="flex px-2 decoration-clone text-custom hover:border rounded-lg  font-bold transition duration-500 ease-in-out    items-center text-gray-600  pb-2  pt-2 text-sm">Contact</a></li>
+              <a href="#" class="  shadow-md  bg-cutmation  text-white border-custom font-bold text-sm leading-6  py-2 px-3 rounded-lg transition duration-500 ease-in-out hover:bg-hover hover:border-custom hover:border-2 ">S'inscrire<i class="fas fa-user-plus ml-2"></i></a>
+            </ul>
+            
+            <ul class="md:hidden p-3">
+              <li class=" m-2 flex"><a href="#" id="toggleButton" class=" flex text-cust mx-2  p-4 decoration-clone border-2 border-custom  rounded-lg font-bold transition duration-500 ease-in-out   items-center text-gray-600 pb-2  pt-2 text-sm"><i class="fa-solid fa-moon"></i></a></li>
+              <li class="m-2 flex"><a href="#Home" class=" flex px-2 decoration-clone text-custom  hover:border rounded-lg font-bold transition duration-500 ease-in-out   items-center text-gray-600 pb-2  pt-2 text-sm"><i class="fa-solid fa-home mx-1"></i>Home</a></li>
+              <li class="m-2 flex"><a href="#About" class=" flex px-2 decoration-clone text-custom hover:border rounded-lg font-bold transition duration-500 ease-in-out   items-center text-gray-600 pb-2  pt-2  text-sm"><i class="fa-solid fa-circle-info mx-1"></i>About</a></li>
+              <li class="m-2 flex"><a href="#Services" class="flex px-2 decoration-clone text-custom hover:border rounded-lg font-bold transition duration-500 ease-in-out   items-center text-gray-600 pb-2  pt-2 text-sm"><i class="fa-solid fa-server mx-1"></i>Services</a></li>
+              <li class="m-2 flex"><a href="#Calendrier" class="flex px-2 decoration-clone text-custom hover:border rounded-lg font-bold transition duration-500 ease-in-out   items-center text-gray-600  pb-2  pt-2 text-sm"><i class="fa-solid fa-calendar mx-1"></i>Calendrier</a></li>
+              <li class="m-2 flex"><a href="#Oeuvres" class="flex px-2 decoration-clone text-custom hover:border rounded-lg font-bold transition duration-500 ease-in-out   items-center text-gray-600  pb-2  pt-2 text-sm"><i class="fa-solid fa-hands-holding mx-1"></i>Oeuvres</a></li>
+              <li class="m-2 flex"><a href="#Contact" class="flex px-2 decoration-clone text-custom hover:border rounded-lg  font-bold transition duration-500 ease-in-out    items-center text-gray-600  pb-2  pt-2 text-sm"><i class="fa-solid fa-phone-square mx-1"></i>Contact</a></li>
+            </ul>
+            
+          </div>
+          
+          
+        </div>
+        </nav>        
+      
+    
+      
+       
+        
+      </header>
+    <main class="flex flex-col  w-full min-h-dvh items-center justify-center scroll-smooth">
+      <section id="Home" class="flex px-5 backdrop-blur-3xl md:items-center  flex-col pt-24 md:px-36 md:pt-52 md:pb-20 w-full min-h-dvh   md:justify-center">
+        
+        <div class="flex justify-center  items-center "> 
+        <div class="flex flex-col items-center md:items-baseline md:px-3 ">
+        <a href="#" class=" md:hidden flex px-2 md:text-left text-cust decoration-clone text-4xl  font-bold  items-center text-customPink pb-2  pt-2 md:text-3xl"><i class="fas fa-fingerprint px-1"></i>TechFusion</a>
+        <h1 class="text-cust text-4xl flex  md:text-5xl font-extrabold">Nous proposons </h1>
+          
+        <h2 class="text-gray-600 text-3xl md:text-4xl text-custom md:text-left text-center flex " >des solutions pour votre évolution académique</h2>
+        <div class="flex md:hidden flex-col p-2 ">
+          
+          <i class="fa-solid fa-graduation-cap text-custo font-extrabold text-9xl "></i>
+          
+        </div>
+        <p class=" flex text-custom md:pr-20 md:text-left  text-center text-xs mb-5 mt-4 text-gray-600 ">Pour vous aider dans vos projets de fin de cycle ,nous fournissons des 
+            l'accompagnement durans votre parcours académique et nous travaillont aussi sur 
+            la realisation des maquettes des vos projets de fin de cycle.
+        </p>
+     
+        <a href="#About" class=" flex items-center w-36 shadow-md bg-cutmation border-custom text-white border-customPink font-bold text-sm leading-6  py-2 px-3 rounded-lg transition duration-500 ease-in-out hover:bg-white hover:text-customPink hover:border-2 hover:border-customPink">En savoire plus<i class="fas fa-arrow-right ml-2"></i></a>
+       
+      </div>
+      <div class="hidden md:flex  ">
+          
+        <i class="fa-solid fa-graduation-cap text-custo font-extrabold text-si "></i>
+        
+      </div>
+    </div>
+    <div class=" py-20 md:py-32 w-full flex justify-center items-center flex-col">
+    <i class="fa-solid fa-briefcase bg-cutmation text-white text-3xl p-3 rounded-full border-custom " ></i>
+    <h1 class="text-gray-600 text-center text-2xl text-custom font-semibold">Competances <span class="text-cust ">in Works </span></h1>
+    <p class="text-xs text-custom mb-5 md:mb-24 p-2 md:w-1/2 text-center text-gray-600 ">Nous travaillons dans plusieurs domaine mais la branche pricipale reste dans les sciences informatiques</p>
+   
+    <div class="grid md:grid-cols-5 md:gap-4 gap-2">
+    <div class="flex flex-col items-center border-custom rounded-md p-4">
+      <i class="fa-solid fa-globe bg-cutmation text-white text-1xl p-2 m-2 rounded-full border-custom"></i>
+      <h2 class="text-center text-custom text-gray-600 font-bold mb-2">Reseaux et telecom</h2>
+      <p class="flex text-gray-600 text-xs text-custom">
+        Nous sommes competances dans ce qui est de faire le dimensionement , de faire la 
+        simulation, faire implementation et qu'a gerer les reseaux informatiques.
+      </p>
+    </div>
+   
+    <div class="flex flex-col items-center border-custom rounded-md p-4">
+      <i class="fa-solid fa-desktop bg-cutmation text-white text-1xl p-2 m-2 rounded-full border-custom"></i>
+      <h2 class="text-center text-custom text-gray-600 font-bold mb-2">Bureautiques</h2>
+      <p class="flex text-gray-600 text-xs text-custom">
+        Nous sommes competances dans la manupulatons des logiciels de birequtique 
+        comme Word,Exel ,Towerpoint et access pour un bon traitement des informations.
+       
+      </p>
+    </div>
+    <div class="flex flex-col items-center border-custom rounded-md p-4">
+      <i class="fa-solid fa-code-commit bg-cutmation text-white text-1xl p-2 m-2 rounded-full border-custom"></i>
+      <h2 class="text-center text-custom text-gray-600 font-bold mb-2">Domotiques</h2>
+      <p class="flex text-gray-600 text-xs text-custom">
+        Nous exellons aussi dans la domotique avec des competances de programmation 
+         Arduino avec de grans realistions de projets
+      </p>
+    </div>
+    <div class="flex flex-col items-center border-custom rounded-md p-4">
+      <i class="fab fa-webflow bg-cutmation text-white text-1xl p-2 m-2 rounded-full border-custom"></i>
+      <h2 class="text-center text-custom text-gray-600 font-bold mb-2">Developpement Web</h2>
+      <p class="flex text-gray-600 text-xs text-custom">
+        Nous avons passer accer de temps dans le mondes du Developpement web et nous 
+        metreisons des outils du accer avences dans le mondes du developpement web.
+      </p>
+    </div>
+    <div class="flex flex-col items-center  border-custom rounded-md p-4">
+      <i class=" fas fa-cut bg-cutmation text-white text-1xl p-2 m-2 rounded-full border-custom"></i>
+      <h2 class="text-center text-custom text-gray-600 font-bold mb-2">Design et montage</h2>
+      <p class="flex text-gray-600 text-xs text-custom">
+       Nous avons un certiane competance dans le motage des video ,nous exellons aussi 
+       dans le monde du Design UI/UX pour des interfaces utiliser de clite.
+       
+      </p>
+    </div>
+    
+   </div>
+  </div>
+     
+       
+      </section>
+      <section id="About" class="flex  backdrop-blur-xl flex-col w-full min-h-dvh bg-blur items-center p-4 md:p-20 bg-gray-50">
+        <i class="fa-solid fa-record-vinyl bg-cutmation text-white text-3xl p-3 rounded-full border-custom " ></i>
+          <h1 class="text-gray-600 text-center text-2xl text-custom font-semibold">Simple solution pour vos <span class="text-cust ">sujets de fin de sycle</span></h1>
+              
+          <p class="text-gray-600 text-xs m-4 text-center md:w-1/2 text-custom ">Nous vous proposons nos différents posibilités pour traiter vos sujets.</p>
+          
+          <div class="grid grid-cols-1 md:flex w-full justify-center items-center m-6">
+            <div class="flex   md:px-20  ">
+              <img src="./images/image (4).png" alt="" class="md:w-max md:h-80  " loading="lazy">
+              
+            </div>
+            <div class=" flex-col w-full md:w-1/2 justify-center p-3 rounded-md  ">
+            
+              
+               <div class="flex  ">
+
+                <div class="flex items-center hover:scale-5 transition duration-500 ease-in-out ">
+                  <span class=" flex w-14 p-4 h-12 items-center justify-center rounded-full bg-customs   text-white bg-cutmation" >1</span>
+                  <div class="block ml-4 border-custom p-4 rounded-lg ">
+                    <h3 class="text-custom text-gray-600 text-lg  font-bold">Proposition</h3>
+                    <p class="text-xs text-custom text-gray-600 ">Nous vous proposant des sujets bien ettablie avec leurs problematique d'ou vous aurais a faire le choix 
+                      en cas de manque de sujet choisire</p>
+                  </div>
+                </div>
+               </div>
+
+               <hr class="bg-cutmation border-none h-7 w-1 ml-5">
+             
+              <div class="flex  ">
+
+               <div class="flex items-center">
+                <span class=" flex w-14  p-4 h-12 items-center justify-center rounded-full  text-white bg-cutmation" >2</span>
+                 <div class="block ml-4 p-4 border-custom rounded-lg">
+                   <h3 class=" text-custom text-gray-600 text-lg  font-bold">Methodes</h3>
+                   <p class="text-xs text-custom text-gray-600">Nous vous expliqu'ons la methode a utiliser selon votre sujet pour vous simplifier la tache lor 
+                    de la redaction de votre memoire</p>
+                 </div>
+               </div>
+              </div>
+
+              <hr class="bg-cutmation border-none h-7 w-1 ml-5">
+
+            <div class="flex">
+
+             <div class="flex items-center hover:scale-50 ">
+               <span class=" flex w-14 p-4 h-12 items-center justify-center rounded-full bg-customPink  text-white bg-cutmation" >3</span>
+               <div class="block ml-3 p-4 border-custom  rounded-lg">
+                 <h3 class="text-custom text-gray-600  text-lg  font-bold">Composition</h3>
+                <p class="text-xs text-custom text-gray-600">Nous vous aidons a reformuler d'une manier simple votre  sujets pour vos faciliter la 
+                  tache lors de la redaction de votre memoire </p>
+               </div>
+             </div>
+            </div>
+
+            <hr class="bg-cutmation border-none h-7 w-1 ml-5">
+
+          <div class="flex">
+
+           <div class="flex items-center">
+            <span class=" flex w-14 h-12 p-4 items-center justify-center rounded-full  text-white bg-cutmation" >4</span>
+             <div class="block ml-4 p-4 border-custom  rounded-lg">
+               <h3 class="text-custom text-gray-600  text-lg  font-bold">Redaction</h3>
+               <p class="text-xs text-custom text-gray-600">En cas de besoin nous pourions rediger pour vous les parties compliquer 
+                de votre memoire et vous donnner des explication detaller par la suite
+               </p>
+             </div>
+           </div>
+           
+           
+          </div>
+            </div>
+          </div>
+          
+           
+      </section>
+      <section id="Services" class="flex w-full min-h-dvh backdrop-blur-3xl bg-custom items-center flex-col p-4 md:p-20">
+        <i class="fa-solid fa-server bg-cutmation text-white text-3xl p-3 rounded-full border-custom " ></i>
+                  <h2  class="text-gray-600 text-custom text-2xl text-center font-semibold p-4 md:w-1/2"> Nous mettons en oeuvre nos <span class="text-cust ">competances pour vous servir.</span> </h2>
+            <p class="text-gray-600 text-xs m-4 text-center text-custom md:w-1/2 ">
+              TechFusion est un groupe qui vous accompagne dans votre parcours academique et vous aidant à vous orienter vers les études et les projets. Nous offrons des services de suivi et de conseills</p>
+            <div class="md:grid-cols-4 grid grid-cols-1 md:p-20 ">
+              <div class="flex flex-col m-3 border-custom b  rounded-lg  overflow-hidden">
+                <div>
+                  <i class="fa-solid fa-hand-holding-hand bg-cutmation text-white text-2xl mr-40 p-5 rounded-r-3xl bg-customPink"></i>
+                </div>
+                <div class="p-7">
+                  <h3 class="text-gray-600 text-custom text-lg  font-bold">Accompagnement</h3>
+                  <p class="text-xs text-custom text-gray-600">Nous vous accompagnons dans votre parcours academique et nous aidons à vous orienter vers les études et les projets.</p>
+                
+                </div>
+                <a href="#"></a>
+                </div>
+                
+                <div class="flex flex-col m-3  border-custom  rounded-lg  overflow-hidden">
+                  <div>
+                    <i class="fa-solid fa-handshake-angle bg-cutmation  text-white text-2xl mr-40 p-5 rounded-r-3xl bg-customPink"></i>
+                  </div>
+                  <div class="p-7">
+                    <h3 class=" text-custom text-gray-600 text-lg font-bold">Coaching</h3>
+                    <p class="text-xs text-custom text-gray-600"> Nous vous aidons à vous orienter 
+                      dans votre parcours academique et à vous positionner. 
+                      Nous vous fournissons des conseils et des astuces pour vous orienter
+                       dans votre parcours academique.</p>
+                  </div>
+                  </div>
+
+                  <div class="flex flex-col m-3  border-custom  rounded-lg  overflow-hidden">
+                    <div>
+                      <i class="fa-solid fa-book bg-cutmation  text-white text-2xl mr-40 p-5 rounded-r-3xl bg-customPink"></i>
+                    </div>
+                    <div class="p-7">
+                      <h3 class="text-custom text-gray-600 text-lg  font-bold">Cours</h3>
+                      <p class="text-xs text-custom text-gray-600">Nous vous fournissons des cours et des conseils pour vous orienter dans votre parcours academique.</p>
+                    </div>
+                    </div>
+
+                      <div class="flex flex-col m-3  border-custom   rounded-lg  overflow-hidden">
+                        <div>
+                          <i class="fa-solid fa-solid fa-swatchbook text-white bg-cutmation text-2xl mr-40 p-5 rounded-r-3xl bg-customPink"></i>
+                        </div>
+                        <div class="p-7">
+                          <h3 class="text-custom text-gray-600 text-xl  font-bold">Maquettes</h3>
+                          <p class="text-xs text-custom text-gray-600">Nous créons des maquettes pour vos projets de fin de cycle, nous vous aidons à vous orienter et à vous positionner.</p>
+                        </div>
+                        </div>
+                
+             
+
+              
+      </section>
+    
+      <section id="Calendrier" class="flex bg-custom p-4 flex-col w-full min-h-dvh justify-center items-center md:p-20 ">
+        <i class="fa-solid fa-calendar-check bg-cutmation text-white text-3xl p-3 rounded-full border-custom " ></i>
+        <h1 class="text-gray-600 text-custom text-2xl md:w-1/2 mb-5 text-center font-semibold">Notre Calendrier depand de l'urgence des clients <span class="text-cust ">et de notre disponiblité. </span></h1>
+        <p  class="text-gray-600 text-xs mb-7 text-custom text-center md:mb-20 md:w-1/2">Les differntes jours de disponibliter en presentiel et en linges pour tout vos preocupations </p>
+          <div class="flex w-full ">
+         
+            
+          <div class="grid md:grid-cols-4 gap-4 bg-custom rounded-lg p-4 ">
+      
+            <div class="flex  items-center rounded-md flex-col border-custom p-4 ">
+              <span class=" flex w-12 h-12 items-center justify-center rounded-full bg-cutmation bottom-3 left-60 p-1  text-white" >1</span>
+              
+              <div class="block  text-center  ">
+                <h3 class="text-gray-600 text-custom text-xl  font-bold">Days</h3>
+                <p class="text-xs  text-custom text-gray-600  ">Nous vous proposant des sujets bien ettablie avec leurs problematique d'ou vous aurais a faire le choix 
+                  en cas de manque de sujet choisire</p>
+              </div>
+            </div>
+            
+            
+          
+         
+          
+
+           <div class="flex border-custom rounded-md p-4 h-full items-center flex-col ">
+            <span class=" flex w-12 h-12 items-center justify-center rounded-full bg-cutmation bottom-3 left-60 p-1  text-white" >2</span>
+              
+             <div class="block bg-customPink rounded-lg text-center ">
+               <h3 class="text-gray-600 text-custom text-xl  font-bold">Methodes</h3>
+               <p class="text-xs text-gray-600 text-custom">Nous vous expliqu'ons la methode a utiliser selon votre sujet pour vous simplifier la tache lor 
+                de la redaction de votre memoire</p>
+             </div>
+           </div>
+    
+           
+         
+        
+      
+
+         <div class="flex  items-center flex-col border-custom rounded-md p-4">
+          <span class=" flex w-12 h-12 items-center justify-center rounded-full bg-cutmation bottom-3 left-60 p-1  text-white" >3</span>
+         
+           <div class="block  text-center ">
+             <h3 class="text-gray-600 text-custom text-xl  font-bold">Composition</h3>
+            <p class="text-xs text-gray-600 text-custom">Nous vous aidons a reformuler d'une manier simple votre  sujets pour vos faciliter la 
+              tache lors de la redaction de votre memoire </p>
+           </div>
+         </div>
+     
+         
+        
+
+       <div class="flex  h-full items-center border-custom rounded-md p-4 flex-col">
+        <span class=" flex  w-12 h-12 items-center justify-center rounded-full bg-cutmation bottom-3 left-60 p-1  text-white" >4</span>
+        
+         <div class="block bg-customPink  rounded-lg text-center ">
+           <h3 class="text-gray-600 text-custom text-xl  font-bold">Redaction</h3>
+           <p class="text-xs text-gray-600 text-custom">En cas de besoin nous pourions rediger pour vous les parties compliquer 
+            de votre memoire et vous donnner des explication detaller par la suite
+           </p>
+         </div>       
+      </div>
+
+    </div>
+    
+
+      
+      </div>
+        </section>
+
+      <section id="Oeuvres" class="flex w-full min-h-dvh bg-gray-50 bg-blur flex-col items-center  p-4 md:p-20">
+        <i class="fa-solid fa-hands-holding bg-cutmation text-white text-3xl p-3 rounded-full border-custom " ></i>
+        <h1 class="text-gray-600 text-custom text-2xl md:w-1/2 mb-5 text-center font-semibold">Voici en image quelques oeuvres que <span class="text-cust ">nous avons produit </span></h1>
+        <p  class="text-gray-600 text-xs text-custom  text-center mb-7 md:w-1/2">Sela ne constitut pas tous nous avons beaucoup en reserve seulement nous avons selectionnez sur nos differentes oeuvres. </p>
+       
+        <div>
+
+          <div class="grid md:grid-cols-4  gap-3 grid-cols-2 md:gap-4 w-full  p-7">
+            <div class="flex items-center justify-center   h-full ">
+                <img src="./images/1.png" alt="" class="   " loading="lazy">
+              </div>
+              <div class="flex items-center justify-center  h-full ">
+                <img src="./images/2.png" alt="" class="  " loading="lazy">
+              </div>
+              <div class="flex items-center justify-center  h-full ">
+                <img src="./images/3.png" alt="" class="  " loading="lazy">
+                </div>
+              <div class="flex items-center justify-center  h-full ">
+      
+                <img src="./images/4.png" alt="" class="  " loading="lazy">
+             </div>
+
+             <div class="flex items-center justify-center  h-full ">
+                <img src="./images/3.png" alt="" class="   " loading="lazy">
+             </div>
+             <div class="flex items-center justify-center  h-full ">
+                <img src="./images/2.png" alt="" class="    " loading="lazy">
+             </div>
+             <div class="flex items-center justify-center  h-full ">
+              <img src="./images/3.png" alt="" class="   " loading="lazy">
+              </div>
+            <div class="flex items-center justify-center  h-full ">
+    
+              <img src="./images/4.png" alt="" class="   " loading="lazy">
+           </div>
+            
+            
+            
+        </div>
+        
+      </section>
+      <section id="Contact" class="flex  w-full min-h-dvh flex-col md:p-20 p-4 items-center ">
+        <i class="fa-solid fa-phone bg-cutmation text-white text-3xl p-3 rounded-full border-custom " ></i>
+        
+        <h1 class="text-gray-600 text-custom text-2xl md:w-1/2 mb-5 text-center font-semibold">Contactez-nous pour une <span class="text-cust ">meilleure rencontre </span></h1>
+        <p class="text-gray-600 text-custom text-xs
+        text-center mb-7 md:mb-20 md:w-1/2">Pour toute question ou pour vous renseigner plus sur notre entreprise ou nos services, contactez nous.</p>
+          <div class="grid md:grid-cols-2 gap-4 items-center md:w-max  md:h-96">
+            <div class="flex md:h-screen ">
+              <img src="./images/bh (3).png" alt="" class="md:w-full">
+            </div>
+            <div class=" p-9 flex flex-col items-center">
+         
+          
+            <div class="grid grid-cols-1">
+              <div class="flex">
+
+                <div class="flex ">
+                  <span class=" flex w-12 p-4 h-12 items-center justify-center rounded-full bg-cutmation  text-white" ><i class="fas fa-phone px-1"></i></span>
+                  <div class="block  p-4  rounded-lg">
+                    <h3 class="text-gray-700  text-custom text-lg  font-bold">+243849676676</h3>
+                   <p class="text-xs text-gray-700 text-custom">Pour tout Contact en priver 
+                     </p>
+                  </div>
+                </div>
+               </div>
+               <div class="flex">
+
+                <div class="flex items-center">
+                  <span class=" flex w-12 p-4 h-12 items-center justify-center rounded-full bg-cutmation  text-white" ><i class="fab fa-whatsapp px-1"></i></span>
+                  <div class="block  p-4  rounded-lg">
+                    <h3 class="text-gray-700 text-custom text-lg  font-bold">+243849676676</h3>
+                   <p class="text-xs text-gray-700 text-custom">Pour tout Contact sur whatsapp 
+                     </p>
+                  </div>
+                </div>
+               </div>
+
+               <div class="flex">
+
+                <div class="flex items-center">
+                  <span class=" flex w-12 p-4 h-12 items-center justify-center rounded-full bg-cutmation  text-white" ><i class="fas fa-envelope px-1"></i></span>
+                  <div class="block  p-4  rounded-lg">
+                    <h3 class="text-gray-700 text-custom text-lg  font-bold">eliseonyembo@gmail.com</h3>
+                   <p class="text-xs text-custom text-gray-700">Envoyer nous vos preocupations a cette address  
+                     </p>
+                  </div>
+                </div>
+               </div>
+            </div>
+            </div>
+            
+          </div>
+          
+          <footer class="md:flex flex-col bg-gray-50 w-full p-4 md:p-16 bg-blur" >
+            <div class="grid md:grid-cols-3 gap-9">
+              <div class="flex flex-col justify-center">
+                <a href="#" class="flex px-2  decoration-clone  font-bold  items-center text-cust pb-2  text-3xl"><i class="fas fa-fingerprint px-1"></i>TechFusion</a>
+                <p class="text-gray-700 text-custom m-3 ">
+                  pour toute question rander vous sur 
+                  sur les reseaux sociaux suivantes
+                </p>
+                <div class="flex ">
+                  <a href="#" class="flex px-2  decoration-clone  font-bold  items-center text-cust   pb-2  text-2xl"><i class="fab fa-tiktok px-1"></i></a>
+                  <a href="#" class="flex px-2  decoration-clone  font-bold  items-center text-cust pb-2 text-2xl"><i class="fab fa-linkedin px-1"></i></a>
+                  <a href="#" class="flex px-2  decoration-clone  font-bold  items-center text-cust pb-2   text-2xl"><i class="fab fa-instagram px-1"></i></a>
+                  <a href="#" class="flex px-2  decoration-clone  font-bold  items-center text-cust pb-2  text-2xl"><i class="fab fa-facebook-square px-1"></i></a>
+                </div>
+              </div>
+
+            
+            
+             <div class="flex flex-col">
+                <h1 class="font-semibold text-gray-700 text-custom text-lg m-2">Contact info</h1>
+                <span class="text-gray-700 text-custom font-semibold"><i class="fa-solid fa-phone text-customPink m-2"></i>+243849676676</span>
+                <span class="text-gray-700  text-custom font-semibold" ><i class="fa-solid fa-envelope text-customPink m-2"></i>
+                
+                  eliseonyembo@gmail.com</span>
+                <span  class="text-gray-700 text-custom font-semibold"><i class="fa-solid fa-map-marker text-customPink m-2"></i>
+                  Fgm, Likasi, Kolwezi, Lubumbashi </span>
+             </div>
+
+               <div class="flex flex-col justify-center">
+                 <p class="text-gray-700 text-custom">
+                   &copy; 2023 TechFusion. Tous droits réservés
+                 </p>
+                 <p class="text-gray-700 text-custom">
+                   Design par <a href="https://www.behance.net/eliseonyembo">Eliseonyembo</a>
+                 </p>
+  
+               </div>
+
+              </div>
+             
+          </footer>
+          <a href="#" class="flex px-2  decoration-clone w-full bg-cutmation   justify-center font-bold  items-center text-white pb-2  pt-2 md:text-3xl"><i class="fas fa-fingerprint px-1"></i>TechFusion</a>
+          <a href="#Home" class=" md:hidden flex fixed bottom-1 px-3 right-1 text-white bg-cutmation shadow-xl border-2 border-custom rounded-full decoration-clone  md:font-bold  items-center  p-2 md:text-3xl"><i class="fas fa-arrow-up p-3"></i></a>
+        </section>
+  </main>
+  
+  <script>
+   
+   const toggleButton = document.getElementById('toggleButton');
+const toggleButto = document.getElementById('toggleButto');
+toggleButton.addEventListener('click', () => {
+  document.documentElement.classList.toggle('dark');
+});
+toggleButto.addEventListener('click', () => {
+    document.documentElement.classList.toggle('dark');
+  });
+     
+ 
+    document.getElementById('menu-button').addEventListener('click', function() {
+      var menu = document.getElementById('menu');
+      if (menu.classList.contains('hidden')) {
+        menu.classList.remove('hidden');
+      } else {
+        menu.classList.add('hidden');
+      }
+    });
+  
+</script>
+</body>
+</html>
